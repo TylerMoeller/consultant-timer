@@ -1,0 +1,46 @@
+<!--- 
+  A joke app I made for my dad. Estimate meeting costs with consultants. 
+-->
+
+<div class="container-sm">
+  <div class="row clock">
+    <div class="col mb-3">
+      <div id="time" class="text-center">00:00:00</div>
+      <div id="total-cost" class="text-center">$0.00</div>
+    </div>
+  </div>
+  <div class="row clock-controls mb-5">
+    <div class="col text-end">
+      <button id="pause-play-button" class="btn btn-success" onclick="pausePlayClock()">
+        <i id="pause-play-icon" class="fas fa-play"></i>
+      </button>
+    </div>
+    <div class="col text-start">
+      <button id="reset-button" class="btn btn-danger" onclick="resetMeeting()">
+        <i id="reset-icon" class="fas fa-redo"></i>
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table id="people" class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Wage ($/hr)</th>
+            <th scope="col">Cost</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4">
+              <button class="btn btn-primary" onclick="addTableRow()">+</button>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

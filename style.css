@@ -1,0 +1,8 @@
+body {
+  background-color: #eee;
+  margin-top: 2em;
+}
+
+#time,#total-cost {
+  font-size:32px;
+}
